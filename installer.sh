@@ -1,4 +1,15 @@
 #!/bin/bash
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+echo -e "${YELLOW}"
+echo "======================================================="
+echo "           Welcome to ScriptKiddi3 Installer             "
+echo "======================================================="
+echo -e "${NC}"
 apt-get install shc
 apt-get install jq
 apt-get install unzip
