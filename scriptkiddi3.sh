@@ -124,20 +124,20 @@ fun_flags () {
 fun_help () {
   banner
   echo -e "${lyellow}[ABOUT]${reset}"
-  echo -e "   Streamline your recon and vulnerability detection process with SCRIPTKIDDI3,"
+  echo -e "   Streamline your recon and vulnerability detection process with r3drecon,"
   echo -e "   A recon and initial vulnerability detection tool built using shell script and open source tools."
   echo -e "\n"
   echo -e "${lyellow}[Usage:]${reset}"
-  echo -e "   scriptkiddi3 [MODE] [FLAGS]"
-  echo -e "   scriptkiddi3 -m EXP -d target.com -c /path/to/config.yaml"
+  echo -e "   r3drecon [MODE] [FLAGS]"
+  echo -e "   r3drecon -m EXP -d target.com -c /path/to/config.yaml"
   echo -e "\n"
 
   echo -e "${lyellow}[MODES:]${reset}"
   echo -e "${yellow}    ['-m'/'--mode']${reset}"
   echo -e "         Available Options for MODE: "
-  echo -e "         SUB | sub | SUBDOMAIN | subdomain           Run scriptkiddi3 in SUBDOMAIN ENUMERATION mode"
-  echo -e "         URL | url                                   Run scriptkiddi3 in URL ENUMERATION mode"
-  echo -e "         EXP | exp | EXPLOIT | exploit               Run scriptkiddi3 in Full Exploitation mode"
+  echo -e "         SUB | sub | SUBDOMAIN | subdomain           Run r3drecon in SUBDOMAIN ENUMERATION mode"
+  echo -e "         URL | url                                   Run r3drecon in URL ENUMERATION mode"
+  echo -e "         EXP | exp | EXPLOIT | exploit               Run r3drecon in Full Exploitation mode"
   echo -e "\n"
   echo -e "         Feature of EXPLOIT mode :                    subdomain enumaration, URL Enumeration,"
   echo -e "                                                     Vulnerability Detection with Nuclei,"
@@ -158,20 +158,20 @@ fun_help () {
   echo -e "${yellow}    [UPDATE:]${reset}   -u, --update    to update tool"
   echo -e "\n"
   echo -e "${lyellow}[Examples:]${reset}"
-  echo -e "     Run scriptkiddi3 in full Exploitation mode"
-  echo -e "${lyellow}         scriptkiddi3 -m EXP -d target.com${reset}"
+  echo -e "     Run r3drecon in full Exploitation mode"
+  echo -e "${lyellow}         r3drecon -m EXP -d target.com${reset}"
 
   echo -e "\n"
   echo -e "     Use your own CONFIG file for subfinder"
-  echo -e "${lyellow}         scriptkiddi3 -m EXP -d target.com -c /path/to/config.yaml${reset}"
+  echo -e "${lyellow}         r3drecon -m EXP -d target.com -c /path/to/config.yaml${reset}"
   echo -e "\n"
 
-  echo -e "     Run scriptkiddi3 in SUBDOMAIN ENUMERATION mode"
-  echo -e "${lyellow}         scriptkiddi3 -m SUB -d target.com${reset}"
+  echo -e "     Run r3drecon in SUBDOMAIN ENUMERATION mode"
+  echo -e "${lyellow}         r3drecon -m SUB -d target.com${reset}"
   echo -e "\n"
 
-  echo -e "     Run scriptkiddi3 in URL ENUMERATION mode"
-  echo -e "${lyellow}         scriptkiddi3 -m URL -d target.com${reset}"
+  echo -e "     Run r3drecon in URL ENUMERATION mode"
+  echo -e "${lyellow}         r3drecon -m URL -d target.com${reset}"
   echo -e "\n"
 }
 
@@ -400,7 +400,7 @@ fun_runNuclei () {
 
 #for_update
 fun_update () {
-    git clone https://github.com/thecyberneh/scriptkiddi3.git
+    git clone https://github.com/thecyberneh/r3drecon.git
     cd thecyberneh
     bash installer.sh
 }
