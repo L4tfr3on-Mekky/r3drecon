@@ -43,7 +43,7 @@ So basically, this is an autmation script for your initial recon in bugbounty
    r3drecon requires different tools to run successfully. Run the following command to install the latest version with all requirments-
 
  ```sh
-git clone https://github.com/L4tfr3on/r3drecon_V_1.1.git
+git clone https://github.com/L4tfr3on/r3drecon
 cd r3drecon
 bash install.sh
 ```
