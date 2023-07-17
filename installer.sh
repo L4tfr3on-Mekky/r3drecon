@@ -7,7 +7,7 @@ NC='\033[0m'
 
 echo -e "${YELLOW}"
 echo "======================================================="
-echo "           Welcome to ScriptKiddi3 Installer             "
+echo "           Welcome to r3drecon Installer             "
 echo "======================================================="
 echo -e "${NC}"
 apt-get install shc
@@ -25,11 +25,11 @@ go install github.com/tomnomnom/httprobe@latest
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 
-shc -f scriptkiddi3.sh   
-mv scriptkiddi3.sh.x scriptkiddi3
-cp scriptkiddi3 $HOME/go/bin
-chmod 777 $HOME/go/bin/scriptkiddi3
-rm -rf scriptkiddi3.sh   
+shc -f r3drecon.sh   
+mv r3drecon.sh.x r3drecon
+cp r3drecon $HOME/go/bin
+chmod 777 $HOME/go/bin/r3drecon
+rm -rf r3drecon.sh   
 
 wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_subdomains_2020_11_18.txt -O  subdomains.txt
 mv subdomains.txt /usr/share/wordlists/
